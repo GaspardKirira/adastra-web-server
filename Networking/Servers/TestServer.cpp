@@ -19,7 +19,6 @@ void ADASTRA::TestServer::accepter()
         return;
     }
 
-    // Lire les données
     ssize_t bytes_read = read(new_socket, buffer, sizeof(buffer) - 1);
     if (bytes_read < 0)
     {
